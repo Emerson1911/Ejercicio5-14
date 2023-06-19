@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio6.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+         <Image Source="mate.png" 
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center"/>
+
+            <Label
+                Text="Ejercicio5"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" 
+                FontFamily=""
+                TextColor="Coral"/>
+
+            <Label
+                Text="Calculo Perimetro y Superficie"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center"
+                TextColor="LightCoral"
+                FontFamily=""/>
+
+            <Entry Placeholder="Escriba la Altura" x:Name="altura" TextColor="LightCoral" FontFamily="" FontAttributes="Italic"/>
+            <Entry Placeholder="Escriba la Base" x:Name="bases" TextColor="Coral" FontFamily="" FontAttributes="Italic"/>
+            <Entry Placeholder="Escriba la Altura" x:Name="bases2" TextColor="LightCoral" FontFamily="" FontAttributes="Italic"/>
+            <Entry Placeholder="Respuesta Perimetro" x:Name="Perimetro" TextColor="Red" FontFamily="" FontAttributes="Italic"/>
+            <Entry Placeholder="Respuesta Superficie" x:Name="Superficie" TextColor="Green" FontFamily="" FontAttributes="Italic"/>
+            <Button Text="Calcular" x:Name="Calcular" Clicked="Calcular_Clicked"  TextColor="Red" BackgroundColor="Blue" FontFamily="" FontAttributes="Italic"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
